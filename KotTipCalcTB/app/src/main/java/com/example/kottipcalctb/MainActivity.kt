@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             val formal10 = NumberFormat.getCurrencyInstance().format(tip10)
             val formal15 = NumberFormat.getCurrencyInstance().format(tip15)
             val formal20 = NumberFormat.getCurrencyInstance().format(tip20)
-            binding.billOut.text = "Would give Calulations"
+            binding.billOut.text = getString(R.string.victory, formal10, formal15, formal20)
 
         }else{
             binding.billOut.text = "Please Enter A Bill Amount"
