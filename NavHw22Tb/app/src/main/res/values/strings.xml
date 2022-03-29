@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NavHw22Tb</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="prompt1">Display Image 1</string>
+    <string name="prompt2">Display Image 2</string>
+    <string name="prompt3">Display Image 3</string>
+    <string name="ImageDis1">Image 1</string>
+    <string name="ImageDis2">Image 2</string>
+    <string name="ImageDis3">Image 3</string>
+    <string name="Replace">This should be Replaced</string>
+    <string name="Choice">You Chose This</string>
+</resources>
