@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import com.example.navhw22tb.R
 import com.example.navhw22tb.databinding.MainFragmentBinding
 import androidx.navigation.Navigation
+//import android.widget.ImageView
 
 
 class MainFragment : Fragment() {
@@ -41,7 +42,8 @@ class MainFragment : Fragment() {
         binding.button.setOnClickListener{
             val action: MainFragmentDirections.MainToSecond = MainFragmentDirections.mainToSecond()
             action.setMessage(binding.imageView.contentDescription.toString())
-            action.image = R.drawable.android_image_1
+            //ImageView int1 = getView(binding.imageView).findViewById(R.drawable.android_image_1.getImageResource)
+            action.image = R.drawable.android_image_1//binding.imageView.findViewById(R.drawable.android_image_1)
             Navigation.findNavController(it).navigate(action)
         }
         binding.button2.setOnClickListener{

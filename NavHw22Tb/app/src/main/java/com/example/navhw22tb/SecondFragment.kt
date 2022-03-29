@@ -49,7 +49,7 @@ class SecondFragment : Fragment() {
         arguments?.let {
             val args = SecondFragmentArgs.fromBundle(it)
             binding.winnerName.text = args.message
-            binding.champImage.setImageResource() = args.image
+            binding.champImage.setImageResource(args.image)
         }
     }
 

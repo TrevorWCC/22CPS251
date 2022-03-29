@@ -26,7 +26,7 @@
         <argument
             android:name="image"
             app:argType="reference"
-            android:defaultValue="@drawable/android_image_1"/>
+            android:defaultValue="@drawable/ic_launcher_foreground"/>
     </fragment>
 
 
