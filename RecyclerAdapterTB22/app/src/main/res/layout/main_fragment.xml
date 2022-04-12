@@ -9,9 +9,10 @@
 
     <TextView
         android:id="@+id/titleText"
-        android:layout_width="72dp"
-        android:layout_height="35dp"
-        android:text="Title"
+        android:layout_width="125dp"
+        android:layout_height="46dp"
+        android:text="@string/title"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,21 +21,23 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="194dp"
+        android:layout_height="215dp"
+        android:contentDescription="@string/replace"
         app:layout_constraintBottom_toTopOf="@+id/titleText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.747"
+        tools:ignore="ImageContrastCheck"
         tools:src="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/detailText"
-        android:layout_width="105dp"
-        android:layout_height="32dp"
-        android:text="detailtext"
+        android:layout_width="121dp"
+        android:layout_height="35dp"
+        android:text="@string/detailtext"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

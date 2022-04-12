@@ -1,6 +1,7 @@
-package com.example.recycleradaptertb22
+package com.example.recycleradaptertb22.ui.main
 
 import android.os.Bundle
+import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import android.view.Menu
@@ -22,9 +23,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val Variables = ViewVariables()
-        val Main = MainViewModel()
-        Main.randomizer()
+        //val Variables =  ViewVariables()
+        Log.i("Created", "Created")
+        if(MainViewModel.title[1] == "")
+        {MainViewModel.randomizer()}
+
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)

@@ -19,14 +19,16 @@ class MainActivity2 : AppCompatActivity() {
         val extras = intent.extras ?: return
 
         val qString = extras.getString("qString")
+        val qString2 = extras.getString("qString2")
+        val getImage = extras.getInt("getImage")
 
         val tag: String? = extras.getString("tag")
 
         Log.i("zzz",tag.toString())
 
         binding.titleText.text = qString
-        //binding.detailText.text = qString2
-        //binding.imageView.setImageResource(getImage)
+        binding.detailText.text = qString2
+        binding.imageView.setImageResource(getImage)
     }
 
     fun returnText(view: View) {

@@ -24,6 +24,7 @@ class LifeOwner: LifecycleOwner {
     }
     override fun getLifecycle(): Lifecycle {
         return lifecycleRegistry
+        //hi
     }
 
 }

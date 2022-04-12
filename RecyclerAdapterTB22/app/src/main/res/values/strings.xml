@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">RecyclerAdapterTB22</string>
     <string name="Unused">NoOneShouldSeeThis</string>
+    <string name="title">Title</string>
+    <string name="detailtext">detailtext</string>
+    <string name="replace">Replace</string>
 </resources>
