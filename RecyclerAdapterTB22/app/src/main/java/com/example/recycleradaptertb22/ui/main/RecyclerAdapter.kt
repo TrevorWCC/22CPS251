@@ -5,17 +5,17 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.view.View
 import android.view.ViewGroup
-
+import android.content.Intent
+import androidx.core.app.ActivityCompat.startActivityForResult
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recycleradaptertb22.R
-
 import com.google.android.material.snackbar.Snackbar
 import kotlin.random.Random
 
 class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
     val values = MainViewModel
-
+    private val request_code = 5
     private val titles = values.getTitles()
 
     private val details = values.getDescs()
@@ -48,7 +48,13 @@ class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
             itemImage = itemView.findViewById(R.id.itemImage)
             itemTitle = itemView.findViewById(R.id.itemTitle)
             itemDetail = itemView.findViewById(R.id.itemDetail)
+            //val inte = Intent(this, MainActivity2::class.java)
 
+            //inte.putExtra("qString", itemDetail.text.toString())
+
+            //inte.putExtra("tag","scott")
+
+            //startActivityForResult(in, 5)
             itemView.setOnClickListener { v: View  ->
                 var position: Int = getAdapterPosition()
 
@@ -56,5 +62,9 @@ class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
                     Snackbar.LENGTH_LONG).setAction("Action", null).show()
             }
         }
+    }
+    fun sendText(view: View) {
+
+
     }
 }
