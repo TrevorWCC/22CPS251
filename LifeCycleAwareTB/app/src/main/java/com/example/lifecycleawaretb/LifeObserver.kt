@@ -24,6 +24,7 @@ class LifeObserver: LifecycleObserver {
     @OnLifecycleEvent(Lifecycle.Event.ON_PAUSE)
     fun onPause() {
         Log.i(LOG_TAG, "onPause")
+        //log I is for testing purposes, don't use this like this in the future
         viewModel.setOut("onPause was fired on this date " + LocalDateTime.now()+ "\n*******\n")
     }
     @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
