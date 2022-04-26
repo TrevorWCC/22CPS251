@@ -1,0 +1,2 @@
+rootProject.name = "ContactsP22Roo"
+include ':app'
