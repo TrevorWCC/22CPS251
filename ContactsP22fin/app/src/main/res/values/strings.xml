@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ContactsP22fin</string>
+    <string name="ContactID">Contact ID</string>
+    <string name="not_assigned">Not assigned</string>
+    <string name="contact_name">Contact Name</string>
+    <string name="contact_number">Contact PhoneNumber</string>
+    <string name="add_string">Add</string>
+    <string name="find_string">Find</string>
+    <string name="acsend_string">Asc</string>
+    <string name="descend_string">Desc</string>
+    <string name="inputPlz">Missing a name, add input Please</string>
+    <string name="mistake">You made a mistake while entering data.</string>
+    <string name="garbageCan">Use this to delete</string>
+</resources>
